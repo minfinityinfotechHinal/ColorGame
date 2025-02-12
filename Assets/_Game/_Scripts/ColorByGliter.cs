@@ -676,7 +676,9 @@ private void SaveImage(string key)
         return;
     }
 
-             paintColor = sender.GetComponent<Image>().color;
+            // paintColor = sender.GetComponent<Image>().color;
+
+            paintColor = sender.transform.GetChild(0).GetComponent<Image>().color;
 
       Debug.Log(" paintColor : " + paintColor);
     
